@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="24dp"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+             />
+
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="24dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buSave"
+            android:layout_width="match_parent"
+            android:onClick="buSave"
+            android:layout_height="wrap_content"
+            android:text="Save/Registry" />
+
+        <Button
+            android:id="@+id/buUpdateNow"
+            android:onClick="buUpdateNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Now" />
+
+        <Button
+            android:id="@+id/buload"
+            android:onClick="buload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load" />
+
+        <ListView
+            android:id="@+id/LVNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
